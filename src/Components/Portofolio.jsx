@@ -14,7 +14,7 @@ export default function Portofolio() {
   return (
     <>
       <section className="text-sec pt-3 dark-star min-h-screen">
-        <div className="container pb-10 pt-36 mx-auto">
+        <div className="container pb-10 pt-36 mx-auto px-5 lg:px-24">
           <div className="portofolioContent flex flex-col items-center justify-center gap-2">
             <h2 className="uppercase text-3xl font-bold">
               Portofolio Component
@@ -25,17 +25,17 @@ export default function Portofolio() {
                 {imgs.map((img, idx) => (
                   <div className="col-span-1" key={idx}>
                     <article>
-                      <div className="img relative">
+                      <div className="img group relative">
                         <img
                           src={img}
-                          className="img-fluid w-full object-cover rounded-2"
+                          className=" img-fluid w-full object-cover rounded-2"
                           alt=""
                         />
                         <div
                           onClick={() => showPic(img)}
-                          className="overlay opacity-0 flex justify-center items-center absolute top-0 bottom-0 start-0 end-0 "
+                          className="group-hover:opacity-100 bg-main transition-all duration-300 opacity-0 flex justify-center items-center absolute top-0 bottom-0 start-0 end-0 "
                         >
-                          <i className="fa-solid fa-plus text-white"></i>
+                          <i className="fa-solid fa-plus text-white text-8xl"></i>
                         </div>
                       </div>
                     </article>

@@ -4,7 +4,6 @@ import Star from "./star";
 import img1 from "../assets/imgi_1_poert1.png";
 import img2 from "../assets/imgi_2_port2.png";
 import img3 from "../assets/imgi_3_port3.png";
-import "../Style/portofolio.css";
 export default function Portofolio() {
   const [imgOverlay, setimgOverlay] = useState("");
   function showPic(e) {

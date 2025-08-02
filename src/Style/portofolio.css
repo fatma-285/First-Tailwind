@@ -1,0 +1,10 @@
+.overlay{
+    background-color: rgba(26, 188, 156,.8);
+    transition: .3s all;
+}
+.overlay i{
+    font-size: 5rem !important;
+}
+.img:hover .overlay{
+opacity: 1 !important;
+}

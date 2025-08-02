@@ -1,0 +1,33 @@
+.star {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 30px;
+}
+
+.star::before,
+.star::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 4px;
+}
+
+.light-star .star::before,
+.light-star .star::after {
+  background-color: #fff;
+}
+
+.dark-star .star::before,
+.dark-star .star::after {
+    background-color: var(--color-sec);
+}
+.star::before {
+  left: 0;
+  transform: translateX(-100%);
+}
+.star::after {
+  right: 0;
+  transform: translateX(100%);
+}
